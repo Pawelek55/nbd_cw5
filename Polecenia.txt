@@ -1,0 +1,37 @@
+1. MATCH (m:Movie) RETURN m
+
+2. MATCH (a:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(m:Movie) RETURN m
+
+3. MATCH (a:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(m:Movie)<-[:DIRECTED]-(d:Person) RETURN d
+
+4. MATCH (a:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(cast:Person) RETURN cast
+
+5. MATCH (m1)<-[:ACTED_IN]-(a:Person)-[:ACTED_IN]->(m2 {title:"The Matrix"}) RETURN m1
+
+6. MATCH (a:Person)-[f:ACTED_IN]->(Movies) RETURN a, COUNT(f)
+
+7. MATCH (p:Person)-[:WROTE|:DIRECTED]->(m:Movie) RETURN p, m.title
+
+8. MATCH (a1:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(m:Movie)<-[:ACTED_IN]-(a2:Person {name: "Keanu Reeves"}) RETURN m
+
+9.CREATE (FirstAvenger:Movie {title:'Captain America: The First Avenger', released:2011, tagline:'My mission is to save the world'})
+CREATE (Johnston:Person {name:'Joe Johnston', born:1950})
+CREATE (Markus:Person {name:'Christopher Markus', born:1970})
+CREATE (McFeely:Person {name:'Stephen McFeely', born:1969})
+CREATE (Evans:Person {name:'Chris Evans', born:1981})
+CREATE (Atwell:Person {name:'Hayley Atwell', born:1982})
+CREATE (Stan:Person {name:'Sebastian Stan', born:1982})
+CREATE (LeeJones:Person {name:'Tommy Lee Jones', born:1946})
+
+CREATE
+(LeeJones)-[:ACTED_IN {roles:['Colonel Chester Phillips']}]->(FirstAvenger),
+(Stan)-[:ACTED_IN {roles:['James Buchanan Bucky Barnes']}]->(FirstAvenger),
+(Atwell)-[:ACTED_IN {roles:['Peggy Carter']}]->(FirstAvenger),
+(Evans)-[:ACTED_IN {roles:['Captain America / Steve Rogers']}]->(FirstAvenger),
+(Hugo)-[:ACTED_IN {roles:['Johann Schmidt / Red Skull']}]->(FirstAvenger),
+(Johnston)-[:DIRECTED]->(FirstAvenger),
+(Markus)-[:WROTE]->(FirstAvenger),
+(McFeely)-[:WROTE]->(FirstAvenger),
+
+match (p:Person)-[r]-(m:Movie {title:"Captain America: The First Avenger"}) return p,r,m
+

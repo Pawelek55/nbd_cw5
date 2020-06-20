@@ -1,0 +1,228 @@
+﻿[
+  {
+    "p": {
+      "identity": 347,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Sebastian Stan",
+        "born": 1982
+      }
+    },
+    "r": {
+      "identity": 504,
+      "start": 347,
+      "end": 340,
+      "type": "ACTED_IN",
+      "properties": {
+        "roles": [
+          "James Buchanan Bucky Barnes"
+        ]
+      }
+    },
+    "m": {
+      "identity": 340,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "My mission is to save the world",
+        "released": 2011
+      }
+    }
+  },
+  {
+    "p": {
+      "identity": 343,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Stephen McFeely",
+        "born": 1969
+      }
+    },
+    "r": {
+      "identity": 510,
+      "start": 343,
+      "end": 340,
+      "type": "WROTE",
+      "properties": {}
+    },
+    "m": {
+      "identity": 340,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "My mission is to save the world",
+        "released": 2011
+      }
+    }
+  },
+  {
+    "p": {
+      "identity": 348,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Tommy Lee Jones",
+        "born": 1946
+      }
+    },
+    "r": {
+      "identity": 503,
+      "start": 348,
+      "end": 340,
+      "type": "ACTED_IN",
+      "properties": {
+        "roles": [
+          "Colonel Chester Phillips"
+        ]
+      }
+    },
+    "m": {
+      "identity": 340,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "My mission is to save the world",
+        "released": 2011
+      }
+    }
+  },
+  {
+    "p": {
+      "identity": 342,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Christopher Markus",
+        "born": 1970
+      }
+    },
+    "r": {
+      "identity": 509,
+      "start": 342,
+      "end": 340,
+      "type": "WROTE",
+      "properties": {}
+    },
+    "m": {
+      "identity": 340,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "My mission is to save the world",
+        "released": 2011
+      }
+    }
+  },
+  {
+    "p": {
+      "identity": 346,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Hayley Atwell",
+        "born": 1982
+      }
+    },
+    "r": {
+      "identity": 505,
+      "start": 346,
+      "end": 340,
+      "type": "ACTED_IN",
+      "properties": {
+        "roles": [
+          "Peggy Carter"
+        ]
+      }
+    },
+    "m": {
+      "identity": 340,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "My mission is to save the world",
+        "released": 2011
+      }
+    }
+  },
+  {
+    "p": {
+      "identity": 345,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Chris Evans",
+        "born": 1981
+      }
+    },
+    "r": {
+      "identity": 506,
+      "start": 345,
+      "end": 340,
+      "type": "ACTED_IN",
+      "properties": {
+        "roles": [
+          "Captain America / Steve Rogers"
+        ]
+      }
+    },
+    "m": {
+      "identity": 340,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "My mission is to save the world",
+        "released": 2011
+      }
+    }
+  },
+  {
+    "p": {
+      "identity": 341,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Joe Johnston",
+        "born": 1950
+      }
+    },
+    "r": {
+      "identity": 508,
+      "start": 341,
+      "end": 340,
+      "type": "DIRECTED",
+      "properties": {}
+    },
+    "m": {
+      "identity": 340,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "My mission is to save the world",
+        "released": 2011
+      }
+    }
+  }
+]
